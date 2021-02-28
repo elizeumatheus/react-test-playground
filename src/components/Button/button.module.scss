@@ -1,0 +1,8 @@
+.button {
+  background-color: #016ffd;
+
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid #016ffd;
+  }
+}
