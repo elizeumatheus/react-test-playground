@@ -10,6 +10,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "classnames": "^2.2.6",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
@@ -17,7 +19,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "watch:css": "yarn tsm src --watch --implementation node-sass",
+    "start:js": "react-scripts start",
+    "start": "npm-run-all -p watch:css start:js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,5 +43,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/node-sass": "^4.11.1",
+    "npm-run-all": "^4.1.5",
+    "typed-scss-modules": "^4.1.0"
   }
 }
