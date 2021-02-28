@@ -20,7 +20,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "watch:css": "yarn tsm src --watch --implementation node-sass",
+    "watch:css": "yarn tsm src --watch --implementation node-sass --ignore 'src/styles/global/*.scss'",
     "start:js": "react-scripts start",
     "start": "npm-run-all -p watch:css start:js",
     "build": "react-scripts build",
