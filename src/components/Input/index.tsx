@@ -1,7 +1,7 @@
 import classnames from 'classnames'
 
-import * as styles from './input.module.scss'
-import { IInput } from './input.types'
+import * as styles from './Input.module.scss'
+import { IInput } from './Input.types'
 
 const Input: React.FC<IInput> = ({ className, label, error, ...props }) => {
   const inputClassnames = classnames([styles.input, className])

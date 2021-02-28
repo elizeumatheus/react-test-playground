@@ -1,6 +1,6 @@
 import classnames from 'classnames'
 
-import * as styles from './noAuthLayout.module.scss'
+import * as styles from './NoAuthLayout.module.scss'
 
 interface INoAuthLayout {
   className?: string
