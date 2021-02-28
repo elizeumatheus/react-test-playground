@@ -1,9 +1,15 @@
+import classnames from 'classnames'
+
 import * as styles from './noAuthLayout.module.scss'
 
-const NoAuthLayout: React.FC = ({ children }) => (
+interface INoAuthLayout {
+  className?: string
+}
+
+const NoAuthLayout: React.FC<INoAuthLayout> = ({ children, className }) => (
   <div className={styles.container}>
     <header className={styles.header} />
-    <main className={styles.main}>{children}</main>
+    <main className={classnames([styles.main, className])}>{children}</main>
     <footer className={styles.footer} />
   </div>
 )
