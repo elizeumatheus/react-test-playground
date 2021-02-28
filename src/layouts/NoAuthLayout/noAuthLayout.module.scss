@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-rows: var(--space-xlg) 1fr var(--space-xlg);
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+}
+
+.header {
+  background-color: var(--primary-color);
+}
+
+.main {
+  min-width: var(--max-container-width);
+  margin: 0 auto;
+  padding: var(--space);
+}
+
+.footer {
+  background-color: var(--primary-color);
+}
