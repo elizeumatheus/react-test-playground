@@ -1,7 +1,7 @@
 import classnames from 'classnames'
 
-import * as styles from './button.module.scss'
-import { IButton } from './button.types'
+import * as styles from './Button.module.scss'
+import { IButton } from './Button.types'
 
 const Button: React.FC<IButton> = ({
   children,
