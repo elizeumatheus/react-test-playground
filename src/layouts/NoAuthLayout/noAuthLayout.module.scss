@@ -11,7 +11,7 @@
 }
 
 .main {
-  min-width: var(--max-container-width);
+  max-width: var(--max-container-width);
   margin: 0 auto;
   padding: var(--space);
 }
